@@ -194,6 +194,103 @@ aside > menu img{
     height: 25px;
 }
 
-aside, main{
+aside{
     display: none;
+}
+
+main{
+    padding: 16px;
+    padding-top: 0;
+    display: grid;
+    gap: 12px;
+}
+
+main menu{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+main section h1{
+    font-size: 2rem;
+}
+
+main menu a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+main menu.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: inherit;
+    gap: 16px;
+}
+
+menu.projects > li{
+    display: grid;
+    box-sizing: border-box;
+    padding-left: 10px;
+    grid-template-rows: auto min-content;
+    border-left: 5px solid yellow;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+menu.projects .project-actions{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 15px;
+}
+
+.project-actions button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.project-actions img{
+    width: 25px;
+}
+
+menu.announcements h2{
+    margin-bottom: 5px;
+}
+
+menu.announcements p{
+    margin-top: 0;
+}
+
+
+menu.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+    gap: 16px;
+    justify-items: center;
+}
+
+menu.trending a{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 14px;
+}
+
+menu.trending div *{
+    margin: 0;
+}
+
+menu.trending div :first-child{
+    margin-bottom: 4px;
+}
+
+
+menu.trending img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40  px;
+    border-radius: 50%;
 }
