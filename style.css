@@ -157,8 +157,13 @@ aside{
     background-color: #28a4ec;
     --text-color: white;
 }
+
+aside > div{
+    position: sticky;
+    top: 16px;
+}
  
-aside > h1{
+aside h1{
     font-size: 3rem;
     font-weight: bold;
     margin:0;
@@ -172,7 +177,7 @@ aside > h1{
     gap: 8px;
 }
 
-aside > menu{
+aside menu{
     list-style-type: none;
     padding-left: 8px;
     color: var(--text-color);
@@ -180,12 +185,12 @@ aside > menu{
     grid-template-rows: repeat(10, 45px);
 }
 
-aside > menu > li{
+aside menu > li{
     font-size: 2rem;
     font-weight: bold;
 }
 
-aside > menu a{
+aside menu a{
     text-decoration: none;
     color: var(--text-color);
     display: grid;
@@ -200,12 +205,12 @@ aside img{
     filter: invert(100%) sepia(4%) saturate(1041%) hue-rotate(172deg) brightness(118%) contrast(100%);
 }
 
-aside > h1 img{
+aside h1 img{
     width: 50px;
     height: 50px;
 }
 
-aside > menu img{
+aside menu img{
     width: 25px;
     height: 25px;
 }
@@ -365,7 +370,7 @@ menu.trending img{
         grid-area: 1 / 1 / 3 / 2;
     }
 
-    aside > h1 img{
+    aside h1 img{
         width: 35px;
         height: 35px;
     }
