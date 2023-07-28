@@ -1,18 +1,16 @@
 :root{
     font-size: 62.5%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --main-bg-color: #d8dbe6
 }
 
 html{
-    height: 100%;
     width: 100vw;
 
 }
 
 body{
     margin: 0;
-    height: 100%;
-    width: 100%;
 }
 
 header{
@@ -56,7 +54,7 @@ header > .navbar{
     padding: 10px 8px 10px 8px;
     border: 0;
     border-radius: 15px;
-    background-color: #c3d9e6
+    background-color: var(--main-bg-color)
     
 }
 
@@ -220,7 +218,7 @@ main{
     padding: 16px;
     display: grid;
     gap: 12px;
-    background-color: #c3d9e6;
+    background-color: var(--main-bg-color);
 }
 
 main menu{
