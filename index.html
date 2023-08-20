@@ -15,7 +15,7 @@
             </search>
             <nav class="user-nav">
                 <a href=""><img src="./assets/notifications.svg" class="nav-icon" alt="notif icon"></a>  
-                <a href=""><img src="./assets/dashboard.svg" class="filter-blue nav-icon" alt="dashboard icon"></a>
+                <a id="dashboard-toggle" href=""><img src="./assets/dashboard.svg" class="filter-blue nav-icon" alt="dashboard icon"></a>
                 <a href=""><img src="./assets/uzaki.jpg" class="profile-pic" alt="profile pic"></a>
                 <a href="">Profile Name </a>    
             </nav>
@@ -37,7 +37,10 @@
     </header>
     <aside>
         <div>
-            <h1><img src="./assets/dashboard.svg" alt="">Dashboard</h1>
+            <h1>
+                <img src="./assets/dashboard.svg" alt="">
+                <span>Dashboard</span>
+            </h1>
             <menu>
                 <li>
                     <a href="">
@@ -75,7 +78,6 @@
                         Communities
                     </a>
                 </li>
-                <li></li> <!--To add white space in between-->
                 <li>
                     <a href="">
                         <img src="./assets/settings.svg" alt="">
@@ -270,5 +272,12 @@
             </menu>
         </section>
     </main>
+    <script>
+        document.getElementById("dashboard-toggle").addEventListener("click", toggleDashboard);
+        function toggleDashboard(e){
+            e.preventDefault();
+            document.querySelector("aside").classList.toggle("toggled")
+        }
+    </script>
 </body>
 </html>

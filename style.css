@@ -2,14 +2,15 @@
     font-size: 62.5%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --main-bg-color: #d8dbe6
+    
 }
 
 html{
     width: 100vw;
-
 }
 
 body{
+    position: relative;
     margin: 0;
 }
 
@@ -151,30 +152,38 @@ header > .hero{
 }
 
 aside{
-    box-sizing: border-box;
-    padding: 16px;
+    display: none;
+    position: fixed;
     height: 100%;
+    min-width: 260px;
+    padding-left: 8px;
     background-color: #28a4ec;
     --text-color: white;
 }
 
-aside > div{
-    position: sticky;
-    top: 16px;
+.toggled{
+    display: unset;
+    top: 142px;
+    height: 100%;
+    z-index: 1;
 }
- 
-aside h1{
-    font-size: 3rem;
-    font-weight: bold;
-    margin:0;
-    color: var(--text-color);
-    margin-bottom: 30px;
 
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: flex-start;
-    align-items: center;
+aside h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+
+   display: grid;
+   grid-auto-flow: column;
+   align-items: center;
+   justify-content: left;
+
     gap: 8px;
+}
+
+aside h1 img{
+    width: 35px;
+    aspect-ratio: 1 / 1;
 }
 
 aside menu{
@@ -182,12 +191,12 @@ aside menu{
     padding-left: 8px;
     color: var(--text-color);
     display: grid;
-    grid-template-rows: repeat(10, 45px);
+    grid-template-rows: repeat(10, 49px);
 }
 
 aside menu > li{
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold; 
 }
 
 aside menu a{
@@ -198,25 +207,17 @@ aside menu a{
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    gap: 24px;
+    gap: 18px;
 }
 
 aside img{
     filter: invert(100%) sepia(4%) saturate(1041%) hue-rotate(172deg) brightness(118%) contrast(100%);
 }
 
-aside h1 img{
-    width: 50px;
-    height: 50px;
-}
 
 aside menu img{
-    width: 25px;
-    height: 25px;
-}
-
-aside{
-    display: none;
+    width: 20px;
+    height: 20px;
 }
 
 main{
