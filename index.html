@@ -15,7 +15,6 @@
             </search>
             <nav class="user-nav">
                 <a href=""><img src="./assets/notifications.svg" class="nav-icon" alt="notif icon"></a>  
-                <a id="dashboard-toggle" href=""><img src="./assets/dashboard.svg" class="filter-blue nav-icon" alt="dashboard icon"></a>
                 <a href=""><img src="./assets/uzaki.jpg" class="profile-pic" alt="profile pic"></a>
                 <a href="">Profile Name </a>    
             </nav>
@@ -45,55 +44,55 @@
                 <li>
                     <a href="">
                         <img src="./assets/home.svg" alt="">
-                        Home
+                        <span>Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./assets/profile.svg" alt="">
-                        Profile
+                        <span>Profile</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./assets/messages.svg" alt="">
-                        Messages
+                        <span>Messages</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./assets/history.svg" alt="">
-                        History
+                        <span>History</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./assets/tasks.svg" alt="">
-                        Tasks
+                        <span>Tasks</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./assets/communities.svg" alt="">
-                        Communities
+                        <span>Communities</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./assets/settings.svg" alt="">
-                        Settings
+                        <span>Settings</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./assets/support.svg" alt="">
-                        Support
+                        <span>Support</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./assets/privacy.svg" alt="">
-                        Privacy
+                        <span>Privacy</span>
                     </a>
                 </li>
             </menu>
@@ -205,6 +204,7 @@
                         </button>
                     </div>
                 </li>
+                <li class=""> <button> Show more </button> </li>
             </menu>
         </section>
         <section>
@@ -273,11 +273,6 @@
         </section>
     </main>
     <script>
-        document.getElementById("dashboard-toggle").addEventListener("click", toggleDashboard);
-        function toggleDashboard(e){
-            e.preventDefault();
-            document.querySelector("aside").classList.toggle("toggled")
-        }
     </script>
 </body>
 </html>
